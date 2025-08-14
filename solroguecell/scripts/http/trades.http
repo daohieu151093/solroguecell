@@ -1,0 +1,21 @@
+### Replace placeholders and run with an HTTP client extension
+
+# Check portfolio
+GET <API_BASE>/agent/portfolio
+Authorization: Bearer <API_KEY>
+
+### Get price
+GET <API_BASE>/price?symbol=ETH
+
+### Submit trade
+POST <API_BASE>/trade/execute
+Content-Type: application/json
+Authorization: Bearer <API_KEY>
+
+{
+  "symbol": "ETH",
+  "side": "LONG",
+  "size": 1.0,
+  "entry": "market",
+  "reasoning": "Entry thesis: liquidity sweep then reclaim. Risk cap 1R. Exit trail after 1R."
+}

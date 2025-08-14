@@ -1,0 +1,11 @@
+{
+  "markets": [
+    "BTC",
+    "ETH"
+  ],
+  "timeframe": "5m-1h",
+  "max_open_positions": 2,
+  "risk_per_trade_R": 1,
+  "daily_max_R": 3,
+  "min_trades_per_day": 3
+}
